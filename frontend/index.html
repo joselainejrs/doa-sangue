@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Doe vida! Doe sangue</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- 
+        Quando criar a página public e a imagem não aparecer
+        coloque uma barra antes para que possa reconhcer 
+        src="/img/logo.png e nos outros links e imagens
+     -->
+        <img class="logo" src="/img/logo.png" alt="imagem de DOE">
+        <h1>A sua doação importa</h1>
+        <p>Até 3 vidas com 1 doação </p>
+        <p>Mais de 38.000 doações são necessárias todos os dias </p>
+        <p>Apenas 1,9% da população brasileira, doa sangue.</p>
+        <button>Quero Ajudar</button>
+    </header>
+
+    <section class="form hide">
+        <h2 class="titulo">Entre na lista de doadores</h2>
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Nome Completo">
+
+            <input type="text" name="email" placeholder="E-mail">
+
+            <input type="text" name="blood" placeholder="Tipo Sanguíneo">
+
+            <button>Quero Ajudar</button>
+        </form>
+    </section>
+
+    <main>
+        <h2>Útimos <span>doadores<span></h2>
+        <section class="donors">
+
+            <!-- 
+                estrutura de repetição
+                ( só é possivel devido a templete engine)
+             -->
+            {% for donor in donors %}
+            <div class="donor">
+            <!-- 
+                chamar o objeto e mostrar a propriedade dele na função
+                de repetição
+             -->
+                <div class="blood">{{donor.blood}}</div>
+                <p>{{donor.name }}</p>
+            </div>
+
+            {%endfor%}
+
+        </section>
+    </main>
+
+    <footer>
+        Com S2 Joselaine
+    </footer>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

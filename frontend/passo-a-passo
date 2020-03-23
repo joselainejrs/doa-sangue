@@ -1,0 +1,4 @@
+instalação 
+
+para conecção ao banco de dados
+npm install pg
