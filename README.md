@@ -18,7 +18,7 @@ $ npm  install nodemon -D
 ```
 
 
-![Imagem]()
+![Imagem](https://github.com/joselainejrs/doa-sangue/blob/master/frontend/public/img/capa.png)
 
 <h4 align="center">
 Projeto desenvolvido por: Joselaine Romão Soares
