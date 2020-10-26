@@ -1,5 +1,5 @@
 <p align="center">
-  <img  src="https://github.com/joselainejrs/ecoleta-font-back/blob/master/ecoleta/assets/logo.svg" alt="Imagem">
+  <img  src="https://github.com/joselainejrs/doa-sangue/blob/master/frontend/public/img/logo.png" alt="Imagem">
 </p>
 
 ```
